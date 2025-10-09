@@ -10,4 +10,9 @@ vim.keymap.set('n', '<leader>ex', vim.cmd.Ex, { desc = 'File [E][x]plorer' })
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move marked Line upwards' })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move marked Line upwards' })
 
+vim.keymap.set('n', '<leader>ga', ':silent !git add %<cr>', { desc = '[G]it [a]dd current file' })
+
+vim.keymap.set('n', '<leader>q', '"_d', { desc = 'Delete to void register' })
+vim.keymap.set('v', '<leader>q', '"_d', { desc = 'Delete to void register' })
+
 return {}
